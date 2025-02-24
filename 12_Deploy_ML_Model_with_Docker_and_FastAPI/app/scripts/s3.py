@@ -15,6 +15,6 @@ def download_dir(local_path, model_name):
                 s3_key = key['Key']
 
                 local_file = os.path.join(local_path, os.path.relpath(s3_key, s3_prefix))
-                #os.makedirs(os.path.dirname(local_file), exist_ok=True)
+                os.makedirs(os.path.dirname(local_file), exist_ok=True)
 
                 s3.download_file(bucket_name, s3_key, local_file)
