@@ -6,3 +6,14 @@ This Docker Compose code runs two containers:
 
 🎯 Overall Purpose
 This setup runs a web application (likely needing AWS access) behind an NGINX server, which acts as a reverse proxy, handling incoming HTTP requests and forwarding them to the app.
+
+
+- To run this, use the command:
+- docker-compose up --build
+
+- to run scale the application, use this command:
+- docker-compose up --build --scale app=2
+
+
+## NOW ALL ARE PACKAGED AS A SINGLE PACKAGE
+### BEAUTY OF DOCKER
