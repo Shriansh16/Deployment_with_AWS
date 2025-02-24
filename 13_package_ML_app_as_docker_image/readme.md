@@ -51,6 +51,11 @@ ssh -i "C:\Users\Shrian Singh\.ssh\sheenu.pem" ubuntu@<public ip of instance>
 Purpose: It starts your Docker Compose setup and scales the service named app to 2 running instances (containers).
 
 🔍 Why use it?
-Load Balancing: Run multiple instances of a service to handle more traffic.
-High Availability: If one container fails, others can continue running.
-Parallel Processing: Useful for microservices or tasks that can run in parallel.
+1. Load Balancing: Run multiple instances of a service to handle more traffic.
+2. High Availability: If one container fails, others can continue running.
+3. Parallel Processing: Useful for microservices or tasks that can run in parallel.
+
+### now you can test it using this link
+http://54.91.143.217/api/v1/sentiment_analysis
+
+
