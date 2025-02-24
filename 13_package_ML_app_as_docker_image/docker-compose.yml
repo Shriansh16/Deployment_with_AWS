@@ -1,0 +1,16 @@
+services:
+  app:
+    image: shriansh16/app
+
+    volumes:
+      - ./.aws:/root/.aws:ro
+
+  
+  nginx:
+    image: shriansh16/nginx
+
+    depends_on:
+      - app
+
+    ports:
+      - "80:80"
